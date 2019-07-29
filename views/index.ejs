@@ -1,11 +1,283 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>วัดอินทขีลสะดือเมือง</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Prompt", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.3"></script>
+  <div class="container ">
+    <img class="w-100"
+      src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/67136940_2505027692882585_514536966096683008_n.jpg?_nc_cat=107&_nc_oc=AQlcDngIgvO0CsousQMJ7sZpkA2jIN6If9klgQQrDgo05n9eta6k2AcsQXdppXtiLpA&_nc_ht=scontent.fbkk10-1.fna&oh=16fdb56151741acbfa7353da02de801f&oe=5DABD9CB"
+      alt="ฟ้อนรำ" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border">
+      <a class="navbar-brand" href="#"><i class="fas fa-gopuram"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/page1">ข่าวประชาสัมพันธ์</a>
+            
+              
+            
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              เกี่ยวกับวัด
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">แกลลอรี่</a>
+              <a class="dropdown-item" href="#">บทสวด</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">ติดต่อเรา</a>
+            </div>
+          </li>
+          <li class="nav-item">
+
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-9">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/67178804_461717331316079_6698124149493071872_n.jpg?_nc_cat=101&_nc_oc=AQkXObC1OAOesxVElFOg2voTB603N40jTn_DSHDy_csHBjAklNdH2LZSkpG2ky5I19E&_nc_ht=scontent.fbkk10-1.fna&oh=707819053cd7fd5d5202ffb390eafdac&oe=5DAA0D94"
+                class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/67109516_482758312479929_6297536900597022720_n.jpg?_nc_cat=102&_nc_oc=AQkkE2F8x2ICVeq02FLJ9ARKCHGH7_A0sANYADBDOOZigYsuP4V9M3P-heEJsbNIJZ0&_nc_ht=scontent.fbkk10-1.fna&oh=0290bba5f24f45e1a9f99b6f7e225e71&oe=5DA2DA6C"
+                class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/66822778_2222474194474082_1767796388571119616_n.jpg?_nc_cat=105&_nc_oc=AQl0xUvw_IkQYu09PQny0SmdKbJLLw8LKmd6acbcVdOkX9HSO1SZWL6uFvFBHYpJGwg&_nc_ht=scontent.fbkk10-1.fna&oh=87d3fb90759f247529b0b92155f91974&oe=5DB10B0F"
+                class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <nav class="mt-2">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+              aria-controls="nav-home" aria-selected="true">ประวัติวัดอินทขีลสะดือเมือง</a>
+
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+              aria-controls="nav-profile" aria-selected="false">รูปภาพกิจกรรม</a>
+
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+              aria-controls="nav-contact" aria-selected="false">สิ่งที่น่าสนใจ</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <ul class="list-group">
+              <li class="list-group-item">สมัยพญามังรายได้ทรงสร้างวัดสะดือเมืองขึ้นเพื่อเป็นที่ประดิษฐานของเสาหลักเมือง
+                หรือเสาอินทขิล
+                ซึ่งตามตำนานพื้นเมืองเหนือกล่าวถึงการบูชาเสาอินทขิลไว้ว่า
+                พระอินทร์ได้ประทานให้ลัวะในสมัยการสร้างเวียงนพบุรี โดยเศรษฐีลัวะ9 ตระกูล พระฤาษีให้กุมภัณฑ์ 2 ตน
+                เอาเสาอินทขิลใส่สาแหรกหามนำไปประดิษฐานไว้ ณ แท่นกลางเมืองนพบุรี
+                ให้ชาวเมืองของลัวะสักการะบูชาก่อนที่จะกลายเป็นเมืองร้างกระทั่งพญามังราย
+                ได้สุบินนิมิตรไล่ตามกวางเผือกจนมาพบชัยภูมิที่ดี จึงมีดำริจะสร้างเมืองขึ้นใหม่ พ.ศ.1835
+                ก่อนสร้างเมืองเชียงใหม่ พญามังรายได้มาสำรวจพื้นที่บริเวณเมืองนพบุรีร้าง
+                ได้พบซากเสาอินทขิลและรูปกุมภัณฑ์ ณ ที่กลางเมืองนั้น จึงมีบัญชา ให้เสนาชื่อ สรีกรชัย
+                แต่งเครื่องบรรณาการไปหาพญาลัวะบนดอยสุเทพ พญาลัวะจึงแนะนำว่า หากเจ้าพญามังรายจะสร้างเมือง
+                ขึ้นใหม่ให้อยู่เย็นเป็นสุขก็ให้บูชากุมภัณฑ์และเสาอินทขิล
+                เมื่อพญามังรายสร้างเมืองนพบุรีศรีนครพิงค์เชียงใหม่แล้ว
+                จึงโปรดให้ยกรูปกุมภัณฑ์และเสาอินทขิลที่ประดิษฐานใน
+                บริเวณสะดือเมืองขึ้นมาเพื่อให้คนสักการะกราบไหว้ตามคำแนะนำของพญาลัวะ
+                <br> ต่อมาจึงได้สร้างวัดขึ้นชื่อว่า วัดอินทขิล แต่เนื่องจากว่าวัดนี้ตั้งอยู่บริเวณสะดือเมือง
+                ชาวบ้านจึงเรียกว่า วัดสะดือเมือง
+                ในตลอดรัชสมัยของพระมหากษัตริย์แห่งราชวงศ์มังรายวัดสะดือเมืองได้เจริญรุ่งเรืองขึ้นโดยลำดับ
+                ก่อนที่จะเป็นวัดร้างภายหลังล้านนาถูกพม่าเข้าปกครอง จนถึงปี พ.ศ.2343 พระเจ้ากาวิละ
+                ปฐมกษัตริย์แห่งราชวงศ์เจ้าเจ็ดตน เจ้าผู้ครองนครเชียงใหม่องค์แรก
+                ได้ขับไล่พม่าออกจากดินแดนล้านนาและได้ฟื้นฟูเมืองเชียงใหม่ขึ้น
+                ได้ย้ายเสาอินทขิลจากวัดอินทขิลมาประดิษฐานอยู่ ณ วัดเจดีย์หลวง พร้อมกับบูรณะฟื้นฟูวัดอินทขิล
+                โดยได้สร้างวิหารคล่อมฐานเดิม อัญเชิญพระอุ่นเมือง (หลวงพ่อขาว) มาประดิษฐานเป็นพระประธานในวิหาร <br>
+
+              </li>
+              <li class="list-group-item">ที่อยู่: 13 ถนนอินทรวโรรส ตำบลศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่ 50200
+              </li>
+
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <br><b>กิจกรมมเวียนเทียนใน วันอาสาฬหบูชา วัดอินทขีลสะดือเมือง เชียงใหม่ <mt-3></b></br>
+           <br> </br><img
+              src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/67269830_365832980754587_6581003543837147136_n.jpg?_nc_cat=110&_nc_eui2=AeGiDvB6EW_5PzFaySoRzUsTXh2TF6GFFejpSR2cPu5Nouw5Flja-vNyRr0_BDgOYAwT8S5YvcWVKmlKIrag4OMMVIGbfzCecEcdI7NGm3oVhA&_nc_oc=AQmz_QyVqZPwBQD8C8LH0c3CNpkC0WlmB2rMpxVakMUnTcoMoUBtftx33-XNdRwT2No&_nc_ht=scontent.fbkk10-1.fna&oh=d407bb2f2deebd65fdf6cc7194b81681&oe=5DAA8D14"
+              class="d-block w-100" alt="..." />
+            </p>
+            <img
+              src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.15752-9/67408931_466593760739638_4167803355998978048_n.jpg?_nc_cat=104&_nc_eui2=AeE6kgzNET-N982rbGeI4AIKrQvSqWWSUXdMe7cKR9bRYmC2qFEnHkpYbGQQTWK8-hSmnPNY7OnOrOa_WA5-PkKSmaUQZlyOECH16sEEDMoaHA&_nc_oc=AQmJJpAYw3UZv-L9SqVoO_r6WSPng0xLF9_wRN-qGBAWxqEWrpy3yzf-kVBn9hDiUpo&_nc_ht=scontent.fbkk14-1.fna&oh=6afdbfbafcc869e88d3878af23382899&oe=5DEBB8F9"
+              class="d-block w-100" alt="..." />
+            </p>
+            <img
+              src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/67393799_889183158098963_5773563225631096832_n.jpg?_nc_cat=108&_nc_eui2=AeG0yEFhw3QZjb4HKt4fgZkLhdEI-Lc5P6s49wmvV3cBt3-SvTuZSF6ONPqtMIVjbW0xzhnJI5fOyJdNvhkscNc0U4bZAQoUur7hN4f_vFQv1w&_nc_oc=AQn3c-DlZv13jiMi9HyrL_MM7JLSiNzypdH1MqzoLrEMBdwGme3MzBtx8U0glqSiMU0&_nc_ht=scontent.fbkk10-1.fna&oh=6a43c406ce56697087ef9b66e006b8d1&oe=5DB36EF1"
+              class="d-block w-100" alt="..." />
+            </p>
+          </div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <br><b> เจดีย์ทรงแปดเหลี่ยม</b></br>
+            พงศาวดารโยนกและตำนานพื้นเมืองเชียงใหม่
+            กล่าวว่าบริเวณที่สร้างเจดีย์แปดเหลี่ยมเคยเป็นสถานที่พญามังรายต้องอัสนีบาตสวรรคต ต่อมาพระยาไชยสงคราม
+            ราชโอรสทรงสร้างเจดีย์บรรจุพระอัฐิไว้ จากรูปแบบสถาปัตยกรรมของพระเจดีย์ที่ปรากฏอยู่ภายในบริเวณศาลากลางหลังเก่า
+            เป็นเจดีย์ทรงกลมผสมเรือนธาตุแปดเหลี่ยม องค์ระฆังคว่ำ ซึ่งนิยมสร้างกันมากในสมัยหริภุญไชย ซึ่งพบที่วัดจามเทวี
+            จังหวัดลำพูน ดังนั้นจึงสันนิษฐานว่า เจดีย์ดังกล่าวน่าจะสร้างขึ้นในช่วงเวลาเดียวกันคือราวต้นพุทธศตวรรษที่ 19
+            <img
+              src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/67125919_569850843419143_1297471437862338560_n.jpg?_nc_cat=110&_nc_eui2=AeFkt0RioQTnADN3WNPJZMeZgJT2yfnQE9ZEWLDs0rnhCxc2v0CKxcBXMoaqJMJjYdt8mK9_UMk2yE_TUH8LQp2Q2BzOhJv_AR45kaSQMYQFDw&_nc_oc=AQno2MzwqwRaAzhCQgsWQzu5ceDi-ic19SORRRC2PxaTsDti7Nvyi4p1hwSoQAyqq70&_nc_ht=scontent.fbkk10-1.fna&oh=5521833b53a2c3a673f565bb9ceee315&oe=5DAB33A5"
+              class="d-block w-100" alt="..." />
+            </p>
+            <br><b>วิหารพระเจ้าอุ่นเมือง(หลวงพ่อขาว)</b>
+            ตามตำนานเชื่อว่า วัดอินทขิลเป็นสถานที่พญามังรายต้องอัศนีบาตจนสิ้นพระชนม์ สำหรับวิหารของพระเจ้าอุ่นเมืองนั้น
+            คงสร้างขึ้นคร่อมฐานเดิมพร้อม ๆ กับการสร้างเจดีย์องค์นอกที่ห่อหุ้มองค์ในประมาณ พ.ศ.2380 สมัยของพระเจ้ากาวิละ
+            ลักษณะเป็นวิหารโถง ผังเดิมเป็นแบบสี่เหลี่ยมผืนผ้า
+            โดยมีหลวงพ่อขาวประดิษฐานเป็นพระประธานหันหน้าไปทางทิศตะวันออก
+            </br>
+            <img
+              src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/67312751_2325348124348481_2616467911782432768_n.jpg?_nc_cat=111&_nc_eui2=AeHxUYETn-39U00ODeoBfx0675jWMz5Z83UUJLWtGs7aR6bt8xlYiXHqwHstt_v8arHLEv5BRTwSICq_Bh-XqxlgabA4ywj9UuinDt9pzaP7MA&_nc_oc=AQlLCy-xAMOxExxam_23imgq0SFCIHqMrlQdetZ9jwc5TyVlLz_sAUib6faT51OteKo&_nc_ht=scontent.fbkk14-1.fna&oh=0d4cb51cd6174fcd95658b30baf93edf&oe=5DE1F9AA"
+              class="d-block w-100" alt="..." />
+            </p>
+
+
+
+
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <div class="card">
+
+              <div class="card-body">
+                <h5 class="card-title"> รูปภาพวัดอินทขีลสะดือเมือง</h5>
+                <p class="card-text">
+
+
+                  <img
+                    src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/67437663_2535511783138358_4997739347101876224_n.jpg?_nc_cat=102&_nc_oc=AQmtdDHzj1YhKhsjNeU_IdfueyvGZjTfCOE-aUpCdhrDFujdG-sJ3AWxzjip8poy4Go&_nc_ht=scontent.fbkk10-1.fna&oh=71cc7bc7a754cdb55a99108d856e519d&oe=5DADFA58"
+                    class="d-block w-100" alt="..." />
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+
+              <div class="card-body">
+                <h5 class="card-title">แผนที่วัดอินทขีลสะดือเมือง</h5>
+                <p class="card-text">
+
+                  <img
+                    src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.15752-9/67538418_580289572502863_4673531747898490880_n.png?_nc_cat=106&_nc_eui2=AeE5LRHT5YZbGRcK3reYO7cfKhb2t7I19ghYU1TNIvMnbu_q3lr0W7FUtZpdI_a0NVRZ0pwRwiD2Mro9IEx6NA0Pv-nOfFsb1JQZhSI_xw_TxA&_nc_oc=AQl5MOP950OuDJps-KzA_mjWXx36Fs0c1pSHSfnVRTF-Nvb03CIuOdDvQaodqe0EEPU&_nc_ht=scontent.fbkk14-1.fna&oh=9ff62303e260c3550645d35a10b7ba8f&oe=5DE7320C"
+                    class="d-block w-100" alt="..." />
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-3">
+        <h4 class="mt-1">Tourist</h4>
+        <img src="//480x500" alt="" class="w-100" />
+        <img
+          src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.15752-9/67093997_340244343582162_4387161998824046592_n.jpg?_nc_cat=103&_nc_oc=AQkNZ06mXya8mm9Jg0O4Mtiaji2i7hqbl8Erm6SDx5Dfb52WrvfpswOTS0FbAOPaf5E&_nc_ht=scontent.fbkk10-1.fna&oh=2a95ee529a2beef551cb1dedc573b907&oe=5DBA5085"
+          class="d-block w-100" alt="..." />
+        <div class="fb-page mt-1" data-href="https://www.facebook.com/watinthakhin/" data-tabs="" data-width=""
+          data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/watinthakhin/" class="fb-xfbml-parse-ignore"><a
+              href="https://www.facebook.com/watinthakhin/">วัดอินทขีล สะดือเมือง จ.เชียงใหม่</a></blockquote>
+        </div>
+        <a target="_blank" href="" title="">
+
+      </div>
+    </div>
+
+    <div class="footer border bg-light mt-3 rounded">
+      <div class="row p-4">
+        <div class="col-4">
+          <h4>ลิงค์ด่วน</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>ลิงค์น่าสนใจ</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+            <li><a href="#">ทดสอบ</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <i class="fas fa-gopuram fa-4x"></i>
+          <address>
+            <strong>วัดอินทขีลสะดือเมือง</strong> <br />
+            13 ถนนอินทรวโรรส ตำบลศรีภูมิ อำเภอเมืองเชียงใหม่ เชียงใหม่ 50200
+            <p>โทร 081 022 8626</p>
+          </address>
+        </div>
+      </div>
+      <p class="p-3">&copy; สงวนสิทธิ์ 2019</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

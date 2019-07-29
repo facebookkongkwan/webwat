@@ -1,9 +1,7 @@
-var express = require('express');
-var router = express.Router();
+import homeRouter from "./home";
+import authRouter from "./auth";
+import userRouter from "./users";
+import adminRouter from "./admin";
+import apiRouter from "./api";
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
+export { homeRouter, authRouter, userRouter, adminRouter, apiRouter };
